@@ -1,0 +1,17 @@
+  //todo  return sum == num ? true : false;
+   
+
+   //todo
+     int rev = 0;
+    while (n > 0)
+    {
+        int ld = n % 10;
+        rev = rev * 10 + ld;
+        n = n / 10;
+    }
+
+//todo
+// to_string(num): Converts the variable num (which should be a number, like int, long, etc.) to its string representation. For example, if num is 123, this becomes "123".
+// so in following if number is - then it will also count - as 1 length 
+use abs(numb) to avoid this 
+int k = to_string(num).length();
