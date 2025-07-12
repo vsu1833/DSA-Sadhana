@@ -10,8 +10,30 @@
         n = n / 10;
     }
 
-//todo
-// to_string(num): Converts the variable num (which should be a number, like int, long, etc.) to its string representation. For example, if num is 123, this becomes "123".
-// so in following if number is - then it will also count - as 1 length 
-use abs(numb) to avoid this 
-int k = to_string(num).length();
+// Note:
+// to_string(num) converts a number (e.g., int, long) to its string form.
+// If num is negative, the '-' sign is included in the string, increasing the length by 1.
+// To get the correct digit count, use abs(num) before converting to string.
+// Example: int k = to_string(abs(num)).length();
+
+
+/*
+An Armstrong number (also known as a narcissistic number) for a given number of digits is an integer such that the sum of its own digits each raised to the power of the number of digits is equal to the number itself.
+For example, 153 is an Armstrong number because:
+1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+*/
+
+
+/*
+ Both cin and getline are used to read input in C++, but they behave differently:
+
+cin
+Reads input up to the first whitespace (space, tab, or newline).
+Example:
+If you enter hello world, cin >> s; will only store hello in s.
+getline
+Reads an entire line of input, including spaces, until a newline character is found.
+Example:
+If you enter hello world, getline(cin, s); will store hello world in s
+
+*/
