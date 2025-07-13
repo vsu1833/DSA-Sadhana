@@ -20,6 +20,7 @@ void selection_sort(int arr[], int n)
 
 int main()
 {
+
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
