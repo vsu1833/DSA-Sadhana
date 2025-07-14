@@ -37,3 +37,15 @@ Example:
 If you enter hello world, getline(cin, s); will store hello world in s
 
 */
+
+/*
+In C++ STL, the built-in sort() function (from the <algorithm> header) does not use a
+ single classic algorithm like quicksort or mergesort. Instead, it uses a hybrid sorting algorithm called:
+
+
+The `sort()` function in C++ STL typically uses a hybrid algorithm called IntroSort.
+IntroSort starts with quicksort for fast average performance.
+If recursion gets too deep, it switches to heapsort to avoid worst-case O(n^2).
+For small partitions, it uses insertion sort for efficiency.
+This combination ensures O(n log n) performance in both average and worst cases.
+*/
