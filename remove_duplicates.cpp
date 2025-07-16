@@ -1,31 +1,24 @@
-#include <iostream>
-#include <vector>
 
-int removeDuplicates(std::vector<int> &nums)
+#include<bits/stdc++.h>
+
+using namespace std;
+int removeDuplicates(int arr[], int n)
 {
-    if (nums.empty())
-        return 0;
-    int index = 1;
-    for (int i = 1; i < nums.size(); ++i)
-    {
-        if (nums[i] != nums[i - 1])
-        {
-            nums[index++] = nums[i];
-        }
+  int i = 0;
+  for (int j = 1; j < n; j++) {
+    if (arr[i] != arr[j]) {
+      i++;
+      arr[i] = arr[j];
     }
-    return index;
+  }
+  return i + 1;
 }
-
-int main()
-{
-    using namespace std;
-    vector<int> nums = {1, 1, 2, 2, 3, 4, 4, 5};
-    int newLength = removeDuplicates(nums);
-    cout << "Array after removing duplicates: ";
-    for (int i = 0; i < newLength; ++i)
-    {
-        cout << nums[i] << " ";
-    }
-    cout << "\nNew length: " << newLength << endl;
-    return 0;
+int main() {
+  int arr[] = {1,1,2,2,2,3,3};
+  int n = sizeof(arr)/sizeof(arr[0]);
+  int k = removeDuplicates(arr, n);
+  cout << "The array after removing duplicate elements is " << endl;
+  for (int i = 0; i < k; i++) {
+    cout << arr[i] << " ";
+  }
 }
