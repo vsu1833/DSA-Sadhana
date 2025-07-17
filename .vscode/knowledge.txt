@@ -49,3 +49,9 @@ If recursion gets too deep, it switches to heapsort to avoid worst-case O(n^2).
 For small partitions, it uses insertion sort for efficiency.
 This combination ensures O(n log n) performance in both average and worst cases.
 */
+
+
+2. View configured remotes:
+```
+git remote -v
+```
