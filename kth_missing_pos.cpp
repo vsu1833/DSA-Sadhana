@@ -12,7 +12,8 @@ class Solution {
                     break;
                 }
             }
-            return k;
+            return k
+            ;
         }
     };
     
