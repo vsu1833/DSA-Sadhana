@@ -24,3 +24,30 @@ int main() {
     cout << "The kth missing positive number is: " << solution.findKthPositive(arr, k) << endl;
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+int missing_int(vector<int> arr, int k)
+{
+    int count = 0;
+    for(int i = 1; i<arr.size(); i++)
+    {
+        if(arr[i]==i)
+        {
+            count++;
+        }
+        if(count==k)
+        {
+            return i;
+        }
+
+    }
+    return -1;
+}
