@@ -25,8 +25,6 @@ public:
         return result;
     }
 };
-
-#ifndef ONLINE_JUDGE
 int main()
 {
     Solution sol;
@@ -38,4 +36,4 @@ int main()
     }
     return 0;
 }
-#endif
+
